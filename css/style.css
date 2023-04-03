@@ -65,3 +65,12 @@ body {
     width: 150px;
     margin-top: 40px;
 }
+
+
+
+.subs-box {
+    border: 3px groove lightblue;
+    width: 500px;
+    height: 200px;
+    margin: auto;
+}
