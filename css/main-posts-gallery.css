@@ -1,0 +1,47 @@
+/* Creates the flex layout for recent blog posts - cover picture and title */
+
+.posts-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.posts-list > li {
+    flex-basis: 300px;
+    /* or 350px */
+}
+
+.posts-list li img {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+.posts-list a {
+    float: right;
+    font-size: 14px;
+    color: black;
+    margin-top: 5px;
+}
+
+.posts-list a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.main h1 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.main h4 {
+    margin-top: 10px;
+}
+
+.posts-list p {
+    font-size: 17px;
+}
