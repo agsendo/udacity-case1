@@ -1,0 +1,39 @@
+.header li, a, button {
+    font-size: 16px;
+    color: bisque;
+}
+
+.header a:hover {
+    color: rgb(248, 193, 126);
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 10%;
+    /*padding: 30px 10%;*/
+    background-color: #333;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.header button {
+    padding: 5px 15px;
+    /* padding: 9px 25px; */
+    background-color: rgba(104, 103, 103, 1);
+    /*background-color: #ffe4c4ff;*/
+    border: none;
+    border-radius: 25px;
+    /*margin-left: 0px;*/
+}
+
+.header button:hover {
+    background-color: rgba(104, 103, 103, 0.9);
+    /*background-color: #868585ee;* -first try/
+    /*background-color: #ffe4c4ee;*/
+    color: rgb(248, 193, 126);
+}
