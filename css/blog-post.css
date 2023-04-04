@@ -1,0 +1,54 @@
+@import url(style-general.css);
+@import url(main-grid.css);
+@import url(navbar.css);
+@import url(newsletter.css);
+@import url(footer.css);
+
+.main p {
+    text-align: justify;
+    /*text-indent: 40px;*/
+    padding: 10px 30px 0 30px;
+}
+
+.main h1, h2 {
+    margin-top: 20px;
+}
+
+.sidebar {
+    background-color: rgb(248, 193, 126);
+}
+
+.sidebar h3 {
+    margin-top: 10px;
+}
+
+.list-calendar {
+    display: inline-block;
+    text-align: left;
+}
+
+.list-calendar > li {
+    font-size: 1.3em;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.list-calendar > li > ul > li {
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+
+.list-cat {
+    display: inline-block;
+    text-align: left;
+}
+
+.list-cat li {
+    margin-top: 5px;
+}
+
+.list-cat a {
+    color: black;
+    font-size: 1em;
+    margin-left: 15px;
+}

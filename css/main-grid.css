@@ -1,0 +1,26 @@
+.header { grid-area: hd; }
+#banner { grid-area: bn; }
+.main { grid-area: main; }
+.sidebar { grid-area: side; }
+.subscribe { grid-area: sbs; }
+.footer { grid-area: ft; }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto 250px;
+    grid-template-areas:
+    'hd hd hd'
+    'bn bn bn'
+    'main main side'
+    'sbs sbs sbs'
+    'ft ft ft';
+    gap: 0;
+    background-color: rgb(250, 246, 239);
+    padding: 10px;
+}
+
+.grid-container > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 17px;
+}
