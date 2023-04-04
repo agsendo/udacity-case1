@@ -5,22 +5,113 @@
 .subscribe { grid-area: sbs; }
 .footer { grid-area: ft; }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto 250px;
-    grid-template-areas:
-    'hd hd hd'
-    'bn bn bn'
-    'main main side'
-    'sbs sbs sbs'
-    'ft ft ft';
-    gap: 0;
-    background-color: rgb(250, 246, 239);
-    padding: 10px;
+
+/*Display grid for small screen*/
+@media(max-width:600px) {
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+        'hd'
+        'bn'
+        'side'
+        'main'
+        'sbs'
+        'ft';
+        gap: 0;
+        background-color: rgb(250, 246, 239);
+        padding: 10px;
+    }
+
+    .grid-container > div {
+        text-align: center;
+        padding: 15px 0;
+        font-size: 16px;
+    }
+
+    #banner {
+        width: vw;
+        height: 250px;
+    }
+
+    .sidebar p {
+        padding: 10px 30px 10px 30px;
+    }
 }
 
-.grid-container > div {
-    text-align: center;
-    padding: 20px 0;
-    font-size: 17px;
+/*Display grid for medium screen*/
+@media(min-width:601px) and (max-width:900px) {
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+        'hd'
+        'bn'
+        'side'
+        'main'
+        'sbs'
+        'ft';
+        gap: 0;
+        background-color: rgb(250, 246, 239);
+        padding: 10px;
+    }
+
+    .grid-container > div {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 17px;
+    }
+
+    #banner {
+        width: vw;
+        height: 400px;
+    }
+
+    .sidebar {
+        display: grid;
+        grid-template-areas:
+        'im h'
+        'im txt';
+        grid-template-columns: 35% 65%;
+        grid-template-rows: 50px auto;
+        justify-content: center;
+    }
+
+    .sidebar > h3 {
+        grid-area: h;
+    }
+
+    .sidebar > img {
+        grid-area: im;
+        /*align-self: center;*/
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sidebar > p {
+        grid-area: txt;
+        text-align: justify;
+        padding-right: 20px;
+    }
+
+}
+
+/* Display grid for big screen*/
+@media(min-width:901px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto 250px;
+        grid-template-areas:
+        'hd hd hd'
+        'bn bn bn'
+        'main main side'
+        'sbs sbs sbs'
+        'ft ft ft';
+        gap: 0;
+        background-color: rgb(250, 246, 239);
+        padding: 10px;
+    }
+    
+    .grid-container > div {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 17px;
+    } 
 }
