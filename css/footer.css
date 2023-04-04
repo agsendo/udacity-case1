@@ -1,0 +1,45 @@
+.footer {
+    background-color: #333;
+    color: bisque;
+    margin-top: 50px;
+}
+
+.footer img {
+    width: 40px;
+    height: auto;
+    margin-bottom: 15px;
+    margin: 0 15px 15px 15px;
+}
+
+/*
+.footer {
+    display: grid;
+    grid-template-columns: repeat(50%, 50%);
+    grid-template-areas:
+    '1 2'
+    '1 4'
+    '5 5';
+    background-color: #333;
+}
+
+.bottom-links {
+    grid-area: 2;
+}
+
+.social-icons {
+    grid-area: 3;
+}
+
+.mail {
+    grid-area: 3b;
+}
+
+.copyr {
+    grid-area: 5;
+}
+
+.social-icons img {
+    width: 40px;
+    height: auto;
+}
+*/

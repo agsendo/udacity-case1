@@ -1,5 +1,6 @@
 @import url(navbar.css);
 @import url(main-posts-gallery.css);
+@import url(footer.css);
 
 * {
     padding: 0;
