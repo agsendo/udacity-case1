@@ -26,6 +26,11 @@
     margin-bottom: 5px;
 }
 
+.subs-title {
+    font-family: Garamond, serif;
+    font-size: 1.3em;
+}
+
 
 /*Newsletter sign up for medium and big screen*/
 @media(min-width:601px) {

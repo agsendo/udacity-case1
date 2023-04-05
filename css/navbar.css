@@ -24,15 +24,19 @@
 /*End of header, navbar for small screen*/
 
 
+/*Header, navbar for medium and big screen*/
 @media(min-width:601px) {
     .header {
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
         align-items: center;
         padding: 20px 10%;
         /*padding: 30px 10%;*/
     }
 }
+/*End of header, navbar for medium and big screen*/
+
 
 nav li {
     display: inline-block;
@@ -46,12 +50,11 @@ nav li {
     /*background-color: #ffe4c4ff;*/
     border: none;
     border-radius: 25px;
-    /*margin-left: 0px;*/
 }
 
 .header button:hover {
     background-color: rgba(104, 103, 103, 0.9);
-    /*background-color: #868585ee;* -first try/
+    /*background-color: #868585ee;*/
     /*background-color: #ffe4c4ee;*/
     color: rgb(248, 193, 126);
 }

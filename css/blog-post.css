@@ -1,12 +1,32 @@
-@import url(style-general.css);
+@import url(style.css);
 @import url(main-grid.css);
 @import url(navbar.css);
 @import url(newsletter.css);
 @import url(footer.css);
 
+
+/*Sidebar - calendar and categories for small and medium screen*/
+@media(max-width:900px) {
+    .sidebar {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+    }
+
+    .calen {
+        grid-area: 1/1/1/1;
+    }
+
+    .categ {
+        grid-area: 1/2/1/2;
+    }
+}
+/*End of sidebar for small and medium screen*/
+
+
 .main p {
     text-align: justify;
-    /*text-indent: 40px;*/
+    /*text-indent: 40px; - to add tab in the first p lines*/
     padding: 10px 30px 0 30px;
 }
 
@@ -25,6 +45,7 @@
 .list-calendar {
     display: inline-block;
     text-align: left;
+    color: black;
 }
 
 .list-calendar > li {
@@ -36,6 +57,10 @@
 .list-calendar > li > ul > li {
     font-size: 0.8em;
     margin-left: 10px;
+}
+
+.list-calendar a {
+    color: black;
 }
 
 .list-cat {
@@ -51,4 +76,13 @@
     color: black;
     font-size: 1em;
     margin-left: 15px;
+}
+
+.sidebar a {
+    color: black;
+}
+
+.sidebar a:hover {
+    cursor: pointer;
+}
 }

@@ -1,0 +1,11 @@
+@import url(style.css);
+@import url(main-grid.css);
+@import url(navbar.css);
+@import url(home-posts-gallery.css);
+@import url(home-sidebar.css);
+@import url(newsletter.css);
+@import url(footer.css);
+
+#banner {
+    background-image: url(../images/banner-sevillana.jpg);
+}
