@@ -1,11 +1,17 @@
 .subs-box {
-    border: 3px groove lightblue;
+    /*border: 3px groove lightblue;*/
+    border: 3px groove #076770;
     border-radius: 10px;
     width: 80%;
     height: auto;
-    margin: auto;
+    margin: 40px auto 20px auto;
     padding: 25px;
-    background-color: rgb(208, 234, 242);
+    /*background-color: rgb(208, 234, 242);*/
+    /*background-color: rgba(225, 185, 136, 0.25); light orange*/
+    /*background-color: #0fa3b15f; teal*/
+    /*background-color: #bfedc1c5; light green*/
+    /*background-color: #0fa3b121; !! lightest teal*/
+    background-color: #0fa3b160;
     box-shadow: 10px 10px 5px lightgray;
 }
 

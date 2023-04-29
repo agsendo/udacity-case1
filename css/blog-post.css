@@ -4,6 +4,9 @@
 @import url(newsletter.css);
 @import url(footer.css);
 @import url(quote.css);
+@import url(typography.css);
+@import url(social-sharing.css);
+@import url(author-box.css);
 
 
 /*Sidebar - calendar and categories for small and medium screen*/
@@ -25,16 +28,77 @@
 /*End of sidebar for small and medium screen*/
 
 
-.main p {
+figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/*Images and captions for small and medium screen*/
+@media(max-width: 600px) {
+    figure img {
+        max-width: 320px;
+        margin: 30px auto 10px auto;
+    }
+}
+
+@media(min-width:601px) and (max-width:900px) {
+    figure img {
+        max-width: 550px;
+        margin: 40px auto 15px auto;
+    }
+}
+
+@media(min-width:901px) {
+    figure img {
+        max-width: 760px;
+        margin: 50px auto 20px auto;
+    }  
+}
+/*End of images and captions for small and medium screen*/
+
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+article p {
     text-align: justify;
     /*text-indent: 40px; - to add tab in the first p lines*/
     padding: 10px 30px 0 30px;
+    margin-top: 10px;
 }
 
-.main h1, h2 {
-    margin-top: 20px;
+article h1, h2 {
+    margin-top: 30px;
+    text-align: center;
 }
 
+.post-date {
+    color: rgb(104, 103, 103);
+    font-size: 22px;
+    font-style: italic;
+    margin: -20px auto 30px 70%;
+}
+
+article strong {
+    /*background-color: #f6a27896;*/
+    /*background-color: rgba(85, 186, 249, 0.577); light blue*/
+    background-color: rgba(86, 215, 150, 0.445);
+}
+
+article a {
+    color: rgb(248, 193, 126);
+    text-decoration: underline;
+}
+
+figcaption {
+    text-align: center;
+}
+
+
+/*Styles for sidebar*/
 .sidebar {
     background-color: rgb(248, 193, 126);
 }
@@ -86,4 +150,4 @@
 .sidebar a:hover {
     cursor: pointer;
 }
-}
+/*End of styles for sidebar*/

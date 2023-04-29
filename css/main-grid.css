@@ -1,6 +1,6 @@
 .header { grid-area: hd; }
 #banner { grid-area: bn; }
-.main { grid-area: main; }
+main { grid-area: main; }
 .sidebar { grid-area: side; }
 .subscribe { grid-area: sbs; }
 .footer { grid-area: ft; }
